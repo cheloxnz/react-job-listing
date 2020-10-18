@@ -8,11 +8,11 @@ function App() {
 
   useEffect(() => setJobs(data), []);
 
-  console.log(jobs)
-
   return (
-    <div>
-      <h1 className='text-4xl'>Hello</h1>
+    <>
+      <header className='bg-teal-500 mb-12'>
+        <img src='/images/bg-header-desktop.svg' alt='bg-image' />
+      </header>
       {
         jobs.length === 0 ? (
           <p>Jobs are fetching...</p>
@@ -25,7 +25,7 @@ function App() {
             ))
           )
       }
-    </div>
+    </>
   );
 }
 
